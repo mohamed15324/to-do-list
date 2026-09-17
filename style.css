@@ -63,6 +63,7 @@
 /* Start global rules */
 body{
    margin: 0;
+   
 }
 *{
     -webkit-box-sizing: border-box;
@@ -98,7 +99,7 @@ html{
     background-color: rgb(28, 27, 31);
     /* flex-direction: column; */
     height: fit-content;
-    width: calc(70%);
+    min-width: calc(70%);
     margin: 0 auto;
     border-radius: 20px;
     padding: 20px;
@@ -116,7 +117,7 @@ html{
     margin:  20px 0 0 0;
  }
  input::placeholder {
-  color: burlywood;
+  color: #806f5f;
 }
  input{
     border: 3px solid ;
@@ -126,25 +127,25 @@ html{
  }
 
  .field label{
-   color: burlywood;
+   color: #806f5f;
  }
 
  button{
    background-color: rgb(28, 27, 31);
-    border: solid 1px burlywood;
+    border: solid 1px #806f5f;
     border-radius: 5px;
     padding: 10px;
-    color: burlywood;
+    color: #806f5f;
     cursor: pointer;
     transition: .3s;
  }
  button:hover{
-   background-color: burlywood;
+   background-color: #806f5f;
    color: rgb(28, 27, 31);
  }
  input:focus{
    outline: none;
-  background-color: burlywood;
+  background-color: #806f5f;
  }
  .error {
   color: rgb(167, 63, 63);
@@ -159,7 +160,7 @@ html{
    display: flex;
    justify-content: center;
    align-items: center;
-  background-color: beige;
+    background: linear-gradient(rgba(0,0,0,.5), rgba(0, 0, 0,.5)),url(ChatGPT\ Image\ Sep\ 17\,\ 2026\,\ 08_47_06\ PM.png);
 
 }
 
@@ -169,7 +170,7 @@ html{
    height: 400px;
    text-align: center;
    border-radius: 20px;
-   color: burlywood;
+   color: #806f5f;
    display: flex;
    align-items: center;
    justify-content: center;
@@ -178,4 +179,22 @@ html{
 }
 .txt{
    font-size: 26px;
+}
+@media(max-width: 767px){
+  .style{
+    padding: 10px;
+  }
+  form{
+    margin: 0 10px;
+  }
+
+  .txt{
+    font-size: 18px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 20px 0 0px 0;
+    line-height: 1;
+    
+    color: #806f5f;
+  }
 }
